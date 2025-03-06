@@ -12,7 +12,7 @@ namespace ConsoleApp1
         {
             int mn = 10000000;
             int flag = 0;
-            for (int i=1;i < arr.Length - 1; i++)
+            for (int i=1;i < arr.Length; i++)
             {
                 if (arr[i] % 2 != 0)
                 {
@@ -21,10 +21,6 @@ namespace ConsoleApp1
                     {
                         mn = arr[i];
                     }
-                }
-                else
-                {
-
                 }
             }
             if (flag == 1)
