@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\lecture_1\\belousov_1012_2\\belousov_1012_2\\belousov_1012_2.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\comp_prakt_belousov_1012\\belousov_1012_2\\belousov_1012_2\\belousov_1012_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\lecture_1\\belousov_1012_2\\belousov_1012_2\\belousov_1012_2.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\comp_prakt_belousov_1012\\belousov_1012_2\\belousov_1012_2\\belousov_1012_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\lecture_1\\belousov_1012_2\\belousov_1012_2\\belousov_1012_2.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\comp_prakt_belousov_1012\\belousov_1012_2\\belousov_1012_2\\belousov_1012_2.csproj",
         "projectName": "belousov_1012_2",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\lecture_1\\belousov_1012_2\\belousov_1012_2\\belousov_1012_2.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\comp_prakt_belousov_1012\\belousov_1012_2\\belousov_1012_2\\belousov_1012_2.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\lecture_1\\belousov_1012_2\\belousov_1012_2\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\comp_prakt_belousov_1012\\belousov_1012_2\\belousov_1012_2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
