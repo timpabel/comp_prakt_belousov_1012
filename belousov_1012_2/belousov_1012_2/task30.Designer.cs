@@ -39,6 +39,7 @@
             plashdquadr = new Button();
             storona = new TextBox();
             panel1 = new Panel();
+            label5 = new Label();
             label4 = new Label();
             textBox_y = new TextBox();
             textBox_x = new TextBox();
@@ -46,7 +47,8 @@
             label3 = new Label();
             rad = new TextBox();
             button2 = new Button();
-            circle = new ListBox();
+            circle5 = new ListBox();
+            panel3 = new Panel();
             angle3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -142,6 +144,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(textBox_y);
             panel1.Controls.Add(textBox_x);
@@ -154,6 +157,15 @@
             panel1.Size = new Size(219, 227);
             panel1.TabIndex = 4;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(86, 188);
+            label5.Name = "label5";
+            label5.Size = new Size(13, 15);
+            label5.TabIndex = 9;
+            label5.Text = "y";
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -162,7 +174,6 @@
             label4.Size = new Size(13, 15);
             label4.TabIndex = 8;
             label4.Text = "x";
-            
             // 
             // textBox_y
             // 
@@ -186,6 +197,7 @@
             draw_circle.TabIndex = 5;
             draw_circle.Text = "draw_circle";
             draw_circle.UseVisualStyleBackColor = true;
+            draw_circle.Click += draw_circle_Click;
             // 
             // label3
             // 
@@ -213,21 +225,29 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // circle
+            // circle5
             // 
-            circle.FormattingEnabled = true;
-            circle.ItemHeight = 15;
-            circle.Location = new Point(644, 267);
-            circle.Name = "circle";
-            circle.Size = new Size(120, 94);
-            circle.TabIndex = 5;
+            circle5.FormattingEnabled = true;
+            circle5.ItemHeight = 15;
+            circle5.Location = new Point(470, 245);
+            circle5.Name = "circle5";
+            circle5.Size = new Size(215, 139);
+            circle5.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            panel3.Location = new Point(109, 245);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(309, 193);
+            panel3.TabIndex = 6;
             // 
             // task30
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(circle);
+            Controls.Add(panel3);
+            Controls.Add(circle5);
             Controls.Add(panel1);
             Controls.Add(panel2);
             Controls.Add(angle3);
@@ -262,6 +282,8 @@
         private TextBox textBox_y;
         private TextBox textBox_x;
         private Button draw_circle;
-        private ListBox circle;
+        private ListBox circle5;
+        private Label label5;
+        private Panel panel3;
     }
 }

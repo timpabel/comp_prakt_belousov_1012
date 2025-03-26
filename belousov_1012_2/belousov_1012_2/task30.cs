@@ -12,9 +12,15 @@ namespace belousov_1012_2
 {
     public partial class task30 : Form
     {
+        private Circle circle;
+        private Point dragStart;
+        
+
         public task30()
         {
             InitializeComponent();
+            circle1 = new Circle(new Point(200, 200), 50);
+            
         }
 
         private void plashdquadr_Click(object sender, EventArgs e)
@@ -43,6 +49,16 @@ namespace belousov_1012_2
             label2.Text = $"{s}";
         }
 
-        
+        private void draw_circle_Click(object sender, EventArgs e)
+        {
+            Point centre;
+            Graphics g = panel3.CreateGraphics();
+            
+            
+            //Point centre = new Point(Convert.ToInt32(textBox_x.Text), Convert.ToInt32(textBox_y.Text));
+            circle = new Circle(Convert.ToInt32(rad.Text), new Point(Convert.ToInt32(textBox_x.Text), Convert.ToInt32(textBox_y.Text)));
+            
+
+        }
     }
 }
