@@ -16,5 +16,8 @@
     <Compile Update="task31.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="task34.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -61,3 +61,4 @@ C:\Users\belou\source\repos\comp_prakt_belousov_1012\belousov_1012_2\belousov_10
 C:\Users\belou\source\repos\comp_prakt_belousov_1012\belousov_1012_2\belousov_1012_2\obj\Debug\net7.0-windows\belousov_1012_2.pdb
 C:\Users\belou\source\repos\comp_prakt_belousov_1012\belousov_1012_2\belousov_1012_2\obj\Debug\net7.0-windows\belousov_1012_2.genruntimeconfig.cache
 C:\Users\belou\source\repos\comp_prakt_belousov_1012\belousov_1012_2\belousov_1012_2\obj\Debug\net7.0-windows\ref\belousov_1012_2.dll
+C:\Users\belou\source\repos\comp_prakt_belousov_1012\belousov_1012_2\belousov_1012_2\obj\Debug\net7.0-windows\belousov_1012_2.task34.resources

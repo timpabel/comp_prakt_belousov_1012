@@ -49,6 +49,7 @@
             button2 = new Button();
             circle5 = new ListBox();
             panel3 = new Panel();
+            label6 = new Label();
             angle3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -144,6 +145,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(textBox_y);
@@ -195,7 +197,7 @@
             draw_circle.Name = "draw_circle";
             draw_circle.Size = new Size(75, 23);
             draw_circle.TabIndex = 5;
-            draw_circle.Text = "draw_circle";
+            draw_circle.Text = "add_circle";
             draw_circle.UseVisualStyleBackColor = true;
             draw_circle.Click += draw_circle_Click;
             // 
@@ -233,13 +235,23 @@
             circle5.Name = "circle5";
             circle5.Size = new Size(215, 139);
             circle5.TabIndex = 5;
+            circle5.SelectedIndexChanged += circle5_SelectedIndexChanged;
             // 
             // panel3
             // 
-            panel3.Location = new Point(109, 245);
+            panel3.Location = new Point(103, 245);
             panel3.Name = "panel3";
             panel3.Size = new Size(309, 193);
             panel3.TabIndex = 6;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(21, 40);
+            label6.Name = "label6";
+            label6.Size = new Size(39, 15);
+            label6.TabIndex = 10;
+            label6.Text = "radius";
             // 
             // task30
             // 
@@ -285,5 +297,6 @@
         private ListBox circle5;
         private Label label5;
         private Panel panel3;
+        private Label label6;
     }
 }

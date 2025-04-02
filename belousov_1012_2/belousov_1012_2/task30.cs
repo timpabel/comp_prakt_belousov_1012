@@ -13,14 +13,14 @@ namespace belousov_1012_2
     public partial class task30 : Form
     {
         private Circle circle;
-        private Point dragStart;
         
+
 
         public task30()
         {
             InitializeComponent();
-            circle1 = new Circle(new Point(200, 200), 50);
-            
+
+
         }
 
         private void plashdquadr_Click(object sender, EventArgs e)
@@ -51,14 +51,26 @@ namespace belousov_1012_2
 
         private void draw_circle_Click(object sender, EventArgs e)
         {
-            Point centre;
-            Graphics g = panel3.CreateGraphics();
-            
-            
+
+
+
             //Point centre = new Point(Convert.ToInt32(textBox_x.Text), Convert.ToInt32(textBox_y.Text));
             circle = new Circle(Convert.ToInt32(rad.Text), new Point(Convert.ToInt32(textBox_x.Text), Convert.ToInt32(textBox_y.Text)));
-            
+            circle5.Items.Add(circle);
+
 
         }
+
+        private void circle5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (circle5.SelectedItem != null)
+            {
+                Circle circle = (Circle)circle5.SelectedItem;
+                circle.drawCircle(panel3, new Pen(Color.Aqua, 4));
+            }
+
+
+        }
+
     }
 }
