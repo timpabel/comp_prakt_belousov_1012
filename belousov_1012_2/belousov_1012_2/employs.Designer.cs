@@ -36,7 +36,10 @@
             label2 = new Label();
             monthCalendar1 = new MonthCalendar();
             label3 = new Label();
-            button1 = new Button();
+            button_change_salary = new Button();
+            button_stage = new Button();
+            label4 = new Label();
+            textBox_newsalary = new TextBox();
             SuspendLayout();
             // 
             // listBox1
@@ -105,22 +108,50 @@
             label3.TabIndex = 7;
             label3.Text = "Дата трудоустройства";
             // 
-            // button1
+            // button_change_salary
             // 
-            button1.Location = new Point(409, 288);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 8;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button_change_salary.Location = new Point(409, 288);
+            button_change_salary.Name = "button_change_salary";
+            button_change_salary.Size = new Size(132, 23);
+            button_change_salary.TabIndex = 8;
+            button_change_salary.Text = "изменить зарплату";
+            button_change_salary.UseVisualStyleBackColor = true;
+            button_change_salary.Click += button1_Click;
+            // 
+            // button_stage
+            // 
+            button_stage.Location = new Point(1, 266);
+            button_stage.Name = "button_stage";
+            button_stage.Size = new Size(114, 23);
+            button_stage.TabIndex = 9;
+            button_stage.Text = "посчитать стаж";
+            button_stage.UseVisualStyleBackColor = true;
+            button_stage.Click += button_stage_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(155, 269);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 15);
+            label4.TabIndex = 10;
+            // 
+            // textBox_newsalary
+            // 
+            textBox_newsalary.Location = new Point(303, 289);
+            textBox_newsalary.Name = "textBox_newsalary";
+            textBox_newsalary.Size = new Size(100, 23);
+            textBox_newsalary.TabIndex = 11;
             // 
             // employs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(textBox_newsalary);
+            Controls.Add(label4);
+            Controls.Add(button_stage);
+            Controls.Add(button_change_salary);
             Controls.Add(label3);
             Controls.Add(monthCalendar1);
             Controls.Add(label2);
@@ -145,6 +176,9 @@
         private Label label2;
         private MonthCalendar monthCalendar1;
         private Label label3;
-        private Button button1;
+        private Button button_change_salary;
+        private Button button_stage;
+        private Label label4;
+        private TextBox textBox_newsalary;
     }
 }

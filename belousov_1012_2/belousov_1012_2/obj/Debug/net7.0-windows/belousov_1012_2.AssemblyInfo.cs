@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("belousov_1012_2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b05d96e0fd3540c9669a8dacdb7e97e473ebc47b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95a53413b4f271697991b9da10db29d099a750be")]
 [assembly: System.Reflection.AssemblyProductAttribute("belousov_1012_2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("belousov_1012_2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
