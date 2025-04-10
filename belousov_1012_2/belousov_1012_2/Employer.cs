@@ -42,9 +42,42 @@ namespace belousov_1012_2
             setId();
 
         }
+        public Employer(string fio, decimal salary)
+        {
+            this.fio = fio;
+            this.salary = salary;
+            count++;
+            setId();
+
+        }
+        public Employer(string fio,DateTime datebegining)
+        {
+            this.fio = fio;
+            this.datebegining = datebegining;
+            count++;
+            setId();
+
+        }
+
         private void setId()
         {
             this.id = this.fio[0].ToString()+count;
+        }
+        public int CalculateStage()
+        {
+            DateTime today = DateTime.Today;
+            int years = today.Year - datebegining.Year;
+
+            if (datebegining.Date > today.AddYears(-years))
+            {
+                years--;
+            }
+
+            return years;
+        }
+        public void ChangeSalary(decimal newSalary)
+        {
+            salary = newSalary;
         }
         public override string ToString()
         {

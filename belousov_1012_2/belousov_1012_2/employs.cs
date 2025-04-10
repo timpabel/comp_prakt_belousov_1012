@@ -36,15 +36,13 @@ namespace belousov_1012_2
                 listBox1.Items.Add(employer);
             }
 
-           
+        private void button1_Click(object sender, EventArgs e)
+        {
+            decimal newsalary = Convert.ToDecimal(textBox_newsalary.Text);
+            int index = listBox1.SelectedIndex;
+            Employer employer = (Employer)listBox1.Items[index];
+            employer.ChangeSalary(newsalary);
+            listBox1.Items[index] = employer;
         }
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    int index = listBox1.SelectedIndex;
-        //    Employer employer = (Employer)listBox1.Items[index];
-        //    employer.setId();
-        //    listBox1.Items[index] = employer;
-        //}
     }
 }
