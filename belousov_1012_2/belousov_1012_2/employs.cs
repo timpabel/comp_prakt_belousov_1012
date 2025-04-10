@@ -20,29 +20,66 @@ namespace belousov_1012_2
 
         private void button_create_Click(object sender, EventArgs e)
         {
-            string fio = textBox_fio.Text;
-            
-            if (textBox_salary.Text != "")
+            if (checkBox_isManager.Checked)
             {
-                decimal salary = Convert.ToDecimal(textBox_salary.Text);
-                DateTime datebegining = monthCalendar1.SelectionStart;
-                Employer employer = new Employer(fio, salary, datebegining);
-                listBox1.Items.Add(employer);
+                if (textBox_salary.Text != "")
+                {
+
+
+                    DateTime datebegining = monthCalendar1.SelectionStart;
+                    Manager manager = new Manager(textBox_fio.Text, Convert.ToDecimal(textBox_salary.Text), datebegining, Convert.ToDecimal(textBox_bonus.Text));
+                    listBox1.Items.Add(manager);
+                }
+                else
+                {
+                    DateTime datebegining = monthCalendar1.SelectionStart;
+                    Manager manager = new Manager(textBox_fio.Text, datebegining, Convert.ToDecimal(textBox_bonus.Text));
+                    listBox1.Items.Add(manager);
+                }
             }
             else
             {
-                DateTime datebegining = monthCalendar1.SelectionStart;
-                Employer employer = new Employer(fio, datebegining);
-                listBox1.Items.Add(employer);
+                if (textBox_salary.Text != "")
+                {
+
+
+                    DateTime datebegining = monthCalendar1.SelectionStart;
+                    Employer employer = new Employer(textBox_fio.Text, Convert.ToDecimal(textBox_salary.Text), datebegining);
+                    listBox1.Items.Add(employer);
+                }
+                else
+                {
+                    DateTime datebegining = monthCalendar1.SelectionStart;
+                    Employer employer = new Employer(textBox_fio.Text, datebegining);
+                    listBox1.Items.Add(employer);
+                }
+
+                
             }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             decimal newsalary = Convert.ToDecimal(textBox_newsalary.Text);
             int index = listBox1.SelectedIndex;
             Employer employer = (Employer)listBox1.Items[index];
+
             employer.ChangeSalary(newsalary);
             listBox1.Items[index] = employer;
+        }
+
+        private void button_stage_Click(object sender, EventArgs e)
+        {
+            int index = listBox1.SelectedIndex;
+            Employer employer = (Employer)listBox1.Items[index];
+            int stage = employer.CalculateStage();
+            label4.Text = stage.ToString();
+        }
+
+        private void checkBox_isManager_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox_bonus.Enabled = !textBox_bonus.Enabled;
+
         }
     }
 }

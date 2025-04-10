@@ -40,6 +40,9 @@
             button_stage = new Button();
             label4 = new Label();
             textBox_newsalary = new TextBox();
+            checkBox_isManager = new CheckBox();
+            textBox_bonus = new TextBox();
+            label_bonus = new Label();
             SuspendLayout();
             // 
             // listBox1
@@ -143,11 +146,42 @@
             textBox_newsalary.Size = new Size(100, 23);
             textBox_newsalary.TabIndex = 11;
             // 
+            // checkBox_isManager
+            // 
+            checkBox_isManager.AutoSize = true;
+            checkBox_isManager.Location = new Point(15, 176);
+            checkBox_isManager.Name = "checkBox_isManager";
+            checkBox_isManager.Size = new Size(73, 19);
+            checkBox_isManager.TabIndex = 12;
+            checkBox_isManager.Text = "Manager";
+            checkBox_isManager.UseVisualStyleBackColor = true;
+            checkBox_isManager.CheckedChanged += checkBox_isManager_CheckedChanged;
+            // 
+            // textBox_bonus
+            // 
+            textBox_bonus.Enabled = false;
+            textBox_bonus.Location = new Point(15, 219);
+            textBox_bonus.Name = "textBox_bonus";
+            textBox_bonus.Size = new Size(100, 23);
+            textBox_bonus.TabIndex = 13;
+            // 
+            // label_bonus
+            // 
+            label_bonus.AutoSize = true;
+            label_bonus.Location = new Point(15, 201);
+            label_bonus.Name = "label_bonus";
+            label_bonus.Size = new Size(40, 15);
+            label_bonus.TabIndex = 14;
+            label_bonus.Text = "bonus";
+            // 
             // employs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label_bonus);
+            Controls.Add(textBox_bonus);
+            Controls.Add(checkBox_isManager);
             Controls.Add(textBox_newsalary);
             Controls.Add(label4);
             Controls.Add(button_stage);
@@ -180,5 +214,8 @@
         private Button button_stage;
         private Label label4;
         private TextBox textBox_newsalary;
+        private CheckBox checkBox_isManager;
+        private TextBox textBox_bonus;
+        private Label label_bonus;
     }
 }
